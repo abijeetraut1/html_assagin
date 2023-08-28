@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="./style.css" />
+  <title>Responsive header</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<div>
+  <script>
+    const toggle = () => {
+      document.getElementById("nav").classList.toggle("navactive");
+    };
+  </script>
+  <header>
+    <div class="brand">
+      <img src="FINAL LOGO.png" height="80px" width="100px">
+    </div>
+    <span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
+    <div class="navbar" id="nav">
+      <div class="searchBox">
+        <input type="text" placeholder="Search here..." />
+        <span class="fas fa-search" id="searchIcon" style="z-index: 1;"></span>
+      </div>
+      <ul>
+        <li>
+          <span class="fas fa-home" id="headIcon"></span>
+          <a href="#"> Home </a>
+        </li>
+        <li>
+          <span class="fa fa-user-circle" id="headIcon"></span>
+          <a href="#"> Profile </a>
+        </li>
+        <li>
+          <span class="fas fa-question-circle" id="headIcon"></span>
+          <a href="#"> Help </a>
+        </li>
+        <li>
+          <div>
+            <!-- <img src="./github.png" class="account-logo"> -->
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <a href="#"> Favourite </a>
+        </li>
+        <!-- <li>
+          <span class="fas fa-sign-out" id="headIcon"></span>
+          <a href="#"> Signout </a>
+        </li> -->
+      </ul>
+    </div>
+  </header>
+  <div class="box1">
+    <img src="Coffee Bags Mockups.png " width="680" height="421">
+  </div>
+  <div class="box2">
+    <h2 style="color: white; ">The art of the roast</h2>
+    <p style="color: white;">With a new roast spectrum <br> front and center on our <br> coffee bags ,it’s easier than
+      <br> ever to find a taste you love.
+    </p>
+    <button type="button" style="border: 2px solid white;" class="button1">Order now</button>
+  </div>
+
+  <div class="box3">
+    <button type="button" style=" color: #008655; cursor: pointer; font-weight: bolder; font-size: 1.3rem;"
+      class="button">Apply Promo Code</button>
+    <img src="food1.png">
+    <h2>Bacon&Banana chips</h2>
+    <h1>Rs:150/</h1>
+  </div>
+  <div class="category">
+    <h1>Shop by category</h1>
+  </div>
+  <div class="box4" style="color: #549EA4;">
+    <img src="food2.png ">
+  </div>
+  <div class="box5" style="background-color: #87E6EE">
+    <h2 style="margin-left: 15px;">Seasonal novelties</h2>
+  </div>
+  <div class="box6" style="color: #549EA4;">
+    <h2 style="color: white;">Popular</h2>
+    <img src="3cup.png" alt="">
+
+  </div>
+  <div class="box7">
+    <h2 style="margin-left: 15px;">Merchandise</h2>
+  </div>
+  <div class="box8">
+    <h2 style="margin-left: 15px;">Food</h2>
+  </div>
+  <div class="box9">
+    <h2 style="margin-left: 20px;">Coffees</h2>
+    <img src="coffee.png" alt="hover">
+  </div>
+  <div class="box10">
+    <h2 style="margin-left: 20px;">Glass Juices</h2>
+    <img src="bottel.png" alt="">
+  </div>
+  <div class="box11">
+    <h2 style="margin-left: 20px;">Drinks</h2>
+    <img src="can.png" alt="">
+  </div>
+  <div class="box12">
+    <h2 style="margin-left: 15px;">Frappuccino</h2>
+    <img src="glass.png" alt="">
+  </div>
+
+
+  <div class="box14">
+    <h2 style="margin-left: 15px;">At Home Coffee</h2>
+    <img src="bags2.png" alt="">
+  </div>
+
+  <!-- gift card -->
+
+  <div class="box19" style=" background-color: #008d59">
+    <div class="button3" >
+      <div>
+        <h1 style="color: white;">Gift Card</h1>
+      </div>
+      <div>  
+        <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos omnis deserunt, eveniet impedit voluptatem
+          perspiciatis veritatis esse iste inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illo quaerat numquam praesentium excepturi possimus molestias vel recusandae in veniam.</p>
+      </div>
+      <div style="display: flex; justify-content: space-between;background-color: #008d59;  width: 40vw; ">
+        <button type="button" style="background-color: #008d59; color: white; border: 2px solid white;  font-size: 1rem; padding: .5rem 3rem;" class="button2">Add Or Reload</button>
+        <button type="button" style="background-color: #008d59; color: white;  border: 2px solid white; font-size: 1rem; padding: .5rem 3rem;" class="button2">Check Balance</button>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <img src="45628.png" alt="" style="height: 40vh;">
+    </div>
+  </div>
+
+
+
+
+  <div class="popular">
+    <h2>Popular on the Catcafe</h2>
+  </div>
+
+
+
+  <!-- coffee product display -->
+
+  <div class="product-container" style="margin-top: 50px;">
+
+    <!-- product 001 -->
+    <div class="product-item">
+      <div class="product-image">
+        <div class="add-to-cart">
+          <i class="fas fa-cart-shopping"></i>
+        </div>
+        <div class="image-div">
+          <img class="image" src="./cup1.png" alt="failed to load the image">
+        </div>
+      </div>
+      <div class="product-give-margin">
+        <div class="product-information">
+          <div class="product-name">
+            <h2 style="width: 80%; font-weight: 900;">Apple Crisp Oatmil Macchiato</h2>
+          </div>
+        </div>
+        <div
+          style="display: flex; align-items: center; margin: 1.5rem 0 .2rem 0; display: flex; justify-content: space-between;">
+          <div class="product-price">
+            <h2>Rs160</h2>
+          </div>
+          <button
+            style=" box-shadow: 4px 7px #7674748f; padding: 1rem; background: #191919; color: white; border: none; text-decoration: none; border-radius: 5px;">
+            <h3> <i class="fa fa-plus" style="color: white; font-weight: 900;"></i> </h3>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <div class="product-image">
+        <div class="add-to-cart">
+          <i class="fas fa-cart-shopping"></i>
+        </div>
+        <div class="image-div">
+          <img class="image" src="./2cup.png" alt="failed to load the image">
+        </div>
+      </div>
+      <div class="product-give-margin">
+        <div class="product-information">
+          <div class="product-name">
+            <h2 style="width: 80%; font-weight: 900;">Iced White Chocolate
+              caffe.</h2>
+          </div>
+        </div>
+        <div
+          style="display: flex; align-items: center; margin: 1.5rem 0 .2rem 0; display: flex; justify-content: space-between;">
+          <div class="product-price">
+            <h2>Rs110</h2>
+          </div>
+          <button
+            style=" box-shadow: 4px 7px #1919198f; padding: 1rem; background: #191919; color: white; border: none; text-decoration: none; border-radius: 5px;">
+            <h3> <i class="fa fa-plus" style="color: white; font-weight: 900;"></i> </h3>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product-item">
+      <div class="product-image">
+        <div class="add-to-cart">
+          <i class="fas fa-cart-shopping"></i>
+        </div>
+        <div class="image-div">
+          <img class="image" src="./1cup.png" alt="failed to load the image">
+        </div>
+      </div>
+      <div class="product-give-margin">
+        <div class="product-information">
+          <div class="product-name">
+            <h2 style="width: 80%; font-weight: 900;">Iced Apple crisp Oatmilk.</h2>
+          </div>
+        </div>
+        <div
+          style="display: flex; align-items: center; margin: 1.5rem 0 .2rem 0; display: flex; justify-content: space-between;">
+          <div class="product-price">
+            <h2>Rs150</h2>
+          </div>
+          <button
+            style=" box-shadow: 4px 7px #1919198f; padding: 1rem; background: #191919; color: white; border: none; text-decoration: none; border-radius: 5px;">
+            <h3> <i class="fa fa-plus" style="color: white; font-weight: 900;"></i> </h3>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product-item">
+      <div class="product-image">
+        <div class="add-to-cart">
+          <i class="fas fa-cart-shopping"></i>
+        </div>
+        <div class="image-div">
+          <img class="image" src="./4cup.png" alt="failed to load the image">
+        </div>
+      </div>
+      <div class="product-give-margin">
+        <div class="product-information">
+          <div class="product-name">
+            <h2 style="width: 80%; font-weight: 900;">Iced Espresso &
+              Matcha Fusion.</h2>
+          </div>
+        </div>
+        <div
+          style="display: flex; align-items: center; margin: 1.5rem 0 .2rem 0; display: flex; justify-content: space-between;">
+          <div class="product-price">
+            <h2>Rs120</h2>
+          </div>
+          <button
+            style=" box-shadow: 4px 7px #1919198f; padding: 1rem; background: #191919; color: white; border: none; text-decoration: none; border-radius: 5px;">
+            <h3> <i class="fa fa-plus" style="color: white; font-weight: 900;"></i> </h3>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="box19">
+    <div class="button3">
+      <div>
+        <h1>Take The Path Of Your Coffee</h1>
+      </div>
+      <div>  
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos omnis deserunt, eveniet impedit voluptatem
+          perspiciatis veritatis esse iste inventore.</p>
+      </div>
+      <div>
+        <button type="button" class="button2">Explore now</button>
+      </div>
+    </div>
+    <div class="button3">
+      <img src="shop1.png" alt="">
+    </div>
+  </div>
+
+  </body>
+
+
+</html>
+<!-- HTML !-->
