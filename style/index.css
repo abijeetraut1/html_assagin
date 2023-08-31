@@ -22,25 +22,6 @@
 }
 
 
-/* navigation */
-li {
-    list-style: none;
-}
-
-.navigations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.give-space {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 20vw;
-    height: 10vh;
-}
-
 /* body */
 .landing-section {
     display: flex;
@@ -75,13 +56,23 @@ li {
     background-color: rgb(202, 202, 202);
 }
 
+.video::before {
+    content: " ";
+    background: url("./../image/interior.jpg") no-repeat center center / cover;
+    position: absolute;
+    height: var(--video-section-height);
+    width: 100%;
+    /* opacity: .7; */
+}
+
 .video-text {
     height: var(--video-section-height);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transform: translateX(20rem);
+    transform: translateX(0rem);
+
 }
 
 .button {
@@ -148,24 +139,6 @@ li {
     height: 100%;
 }
 
-/* 
-/* image carousel */
-/* .carousel{
-    height: 25vw;
-    display: flex;
-    justify-content: space-around;
-    margin: 2rem 10rem;
-}
-
-.carousel div{
-    background-size: cover;
-    overflow: hidden;
-}
-
-.carousel div img{
-    height: 100%;
-}  */
-
 
 .gate-section {
     background-color: #e3e4e9;
@@ -185,26 +158,64 @@ li {
     height: 100%;
 }
 
-.addresslocation{
+.addresslocation {
     display: flex;
     justify-content: center;
     width: 50vw;
 }
 
-.addresslocation div{
+.addresslocation div {
     text-align: center;
     margin: 1.5rem 0;
 }
 
-.time{
+.time {
     display: flex;
     justify-content: space-between;
 }
 
-.time h3{
+.time h3 {
     margin: 0 5rem;
 }
 
-.menu{
+.menu {
     margin: 0 5rem;
 }
+
+
+/* cake image overview */
+.cake-image-display {
+    width: 100vw;
+    margin-top: 2rem;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 5rem;
+}
+
+.text-001 div {
+    width: 20vw;
+    text-align: justify;
+}
+
+.image-001 {
+    height: 50vh;
+    overflow: hidden;
+}
+.image-002 {
+    height: 65vh;
+    overflow: hidden;
+}
+
+.image-001 img,
+.image-002 img,
+.image-003 img {
+    height: 100%;
+}
+
+
+/* footer */
