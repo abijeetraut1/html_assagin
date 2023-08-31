@@ -51,7 +51,7 @@
 /* intro section */
 .video {
     height: var(--video-section-height);
-    width: 95%;
+    width: 100%;
     margin: auto;
     background-color: rgb(202, 202, 202);
 }
@@ -61,8 +61,8 @@
     background: url("./../image/interior.jpg") no-repeat center center / cover;
     position: absolute;
     height: var(--video-section-height);
-    width: 100%;
-    /* opacity: .7; */
+    width: 102vw;
+    opacity: .3;
 }
 
 .video-text {
@@ -105,7 +105,7 @@
 }
 
 .description {
-    width: 20vw;
+    width: 30vw;
     text-align: justify;
 }
 
@@ -117,10 +117,13 @@
 
 /* image-container */
 .image01 {
+    /* transform: translateX(20rem); */
     margin-top: 20rem;
 }
 
 .image02 {
+    /* transform: translateX(-.5rem); */
+
     margin-bottom: .5rem;
 }
 
@@ -218,4 +221,15 @@
 }
 
 
-/* footer */
+/* create papaer menu */
+.cageterial-image{
+    display: flex;
+}
+
+.cageterial-image div {
+    width: 30vw;
+}
+
+.cageterial-image div img{
+    width: 100%;
+}
